@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="rice_bag">Rice Bag</string>
+    <string name="bean_bag">Bean Bag</string>
+    <string name="date">Date</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Error message -->
+    <string name="error_bag_count">Please Insert Total Bag</string>
+    <string name="error_viss_count">Please Insert Total Viss</string>
+    <string name="error_price">Please Insert Price</string>
+    <string name="error_serial">Please Insert Serial Number</string>
+    <string name="error_name">Please Insert Name</string>
+    <string name="error_phone">Please Insert Phone number</string>
+    <string name="error_address">Please Insert Address</string>
+    <string name="error_greater">Invalid Bag Amount</string>
+
+    <!-- Action bar titles-->
+    <string name="sell_t">SELL</string>
+    <string name="import_t">Import</string>
+    <string name="home_t">Home</string>
+    <string name="report_t">Report</string>
+    <string name="user_sold_t">User Sold</string>
+    <string name="green_t">(Green Bean)</string>
+    <string name="black_t">(Black Bean)</string>
+    <string name="calculator_t">Calculator</string>
+    <string name="imported_t">Imported</string>
+    <string name="sold_t">Sold</string>
+    <string name="profit_t">Profit</string>
+
+    <!-- Report titles-->
+    <string name="daily_t">Daily</string>
+    <string name="monthly_t">Monthly</string>
+
+    <!-- Action bar titles-->
+
+</resources>

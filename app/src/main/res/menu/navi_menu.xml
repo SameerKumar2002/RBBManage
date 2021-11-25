@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/id_sell"
+        android:title="sells"/>
+
+    <item
+        android:id="@+id/id_submit"
+        android:title="Import"/>
+
+    <item android:id="@+id/id_user"
+        android:title="User">
+
+        <menu>
+            <item
+                android:id="@+id/report_home_green"
+                android:title="Home  (Green Bean)"/>
+
+            <item
+                android:id="@+id/report_home_black"
+                android:title="Home  (Black Bean)"/>
+
+            <item
+                android:id="@+id/profit_calculator_green"
+                android:title="Calculator (Green Bean)"/>
+
+            <item
+                android:id="@+id/profit_calculator_black"
+                android:title="Calculator (Black Bean)"/>
+
+            <item
+                android:id="@+id/id_reports"
+                android:title="Reports"/>
+
+            <item
+                android:id="@+id/user_sold_green"
+                android:title="User Sold (Green Bean)"/>
+
+            <item
+                android:id="@+id/user_sold_black"
+                android:title="User Sold (Black Bean)"/>
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/id_customer"
+        android:title="Customer">
+        <menu>
+            <item
+                android:id="@+id/id_import_black"
+                android:title="Imported (Black Bean)" />
+
+            <item
+                android:id="@+id/id_import_green"
+                android:title="Imported (Green Bean)" />
+
+            <item
+                android:id="@+id/id_sold_black"
+                android:title="Sold (Black Bean)"/>
+
+            <item
+                android:id="@+id/id_sold_green"
+                android:title="Sold (Green Bean)"/>
+
+        </menu>
+
+
+    </item>
+
+</menu>

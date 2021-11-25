@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:elevation="5dp"
+    android:fadingEdgeLength="2dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/id_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="22/12/2002"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/id_bag_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="35"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/id_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="80000"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/id_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="500000"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:textSize="12sp" />
+
+        </TableRow>
+    </TableLayout>
+</androidx.cardview.widget.CardView>

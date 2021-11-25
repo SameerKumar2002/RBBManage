@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Report_Black_Customer_Sold_MonthFragment"
+    android:fillViewport="true">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.github.mikephil.charting.charts.BarChart
+           android:id="@+id/id_barChart"
+           android:layout_width="match_parent"
+           android:layout_height="260dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+       </com.github.mikephil.charting.charts.BarChart>
+
+       <Button
+           android:id="@+id/id_compare_bag"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="16dp"
+           android:background="@drawable/report_button"
+           android:backgroundTint="@android:color/darker_gray"
+           android:fadingEdge="horizontal|vertical"
+           android:text="Bag"
+           android:textColor="@android:color/white"
+           android:textSize="10sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/id_barChart" />
+
+       <Button
+           android:id="@+id/id_compare_total_price"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="8dp"
+           android:background="@drawable/report_button"
+           android:backgroundTint="@android:color/darker_gray"
+           android:fadingEdge="horizontal|vertical"
+           android:text="Total Price"
+           android:textColor="@android:color/white"
+           android:textSize="10sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/id_barChart" />
+
+       <Button
+           android:id="@+id/id_compare_price"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_marginStart="4dp"
+           android:layout_marginTop="16dp"
+           android:background="@drawable/report_button"
+           android:backgroundTint="@android:color/darker_gray"
+           android:fadingEdge="horizontal|vertical"
+           android:text="Price"
+           android:textColor="@android:color/white"
+           android:textSize="10sp"
+           app:layout_constraintEnd_toStartOf="@+id/id_compare_total_price"
+           app:layout_constraintStart_toEndOf="@+id/id_compare_bag"
+           app:layout_constraintTop_toBottomOf="@+id/id_barChart" />
+
+       <Spinner
+           android:id="@+id/id_spinner"
+           android:layout_width="200dp"
+           android:layout_height="30dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="8dp"
+           android:background="@drawable/spinner_background"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/id_compare_price" />
+
+       <TableLayout
+           android:id="@+id/id_tablelayout"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="8dp"
+           android:stretchColumns="*"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/id_spinner">
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:padding="5dp">
+
+               <TextView
+                   android:id="@+id/textView33"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:ems="5"
+                   android:gravity="start"
+                   android:text="@string/date"
+                   android:textSize="14sp" />
+
+               <TextView
+                   android:id="@+id/textView36"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/bean_bag"
+                   android:textSize="14sp" />
+
+               <TextView
+                   android:id="@+id/textView37"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Price"
+                   android:textSize="14sp" />
+
+               <TextView
+                   android:id="@+id/textView38"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center|center_horizontal"
+                   android:text="Total Price"
+                   android:textSize="12sp" />
+
+           </TableRow>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/id_recycler"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               tools:layout_editor_absoluteX="352dp"
+               tools:layout_editor_absoluteY="339dp" />
+
+       </TableLayout>
+
+       <TextView
+           android:id="@+id/id_no_data_lbl"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No Data Available"
+           android:textSize="18sp"
+           android:visibility="gone"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/id_barChart" />
+
+       <TextView
+           android:id="@+id/id_choose_month_lbl"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Choose Month"
+           app:layout_constraintBottom_toBottomOf="@+id/id_spinner"
+           app:layout_constraintEnd_toStartOf="@+id/id_spinner"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/id_spinner" />
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
